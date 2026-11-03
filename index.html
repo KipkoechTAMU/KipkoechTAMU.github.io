@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Andrew Kipkoech</title>
+
+    <meta name="author" content="Andrew Kipkoech">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="intro">
+        <div class="intro-text">
+          <h1 class="name">Andrew Kipkoech</h1>
+          <p>
+            I am an <strong>M.S. Computer Science student at Texas A&amp;M University</strong>, graduating in May 2027. Before that, I spent <strong>3 years as a Software Engineer at Visa</strong>, and I interned at Amazon. I work across backend systems, machine learning, computer architecture, and security.
+          </p>
+          <nav class="links" aria-label="Contact links">
+            <a href="mailto:andrewkip78@gmail.com">Email</a>
+            <a href="data/Kipkoech_Resume_2026.pdf">Resume</a>
+            <a href="https://github.com/KipkoechTAMU">GitHub</a>
+            <a href="https://www.linkedin.com/in/andrew-kipkoech-994459130/">LinkedIn</a>
+          </nav>
+        </div>
+        <img class="photo" alt="Andrew Kipkoech" src="images/Andrew_Kipkoech.jpg">
+      </header>
+
+      <section>
+        <h2>Education</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Texas A&amp;M University, M.S. Computer Science</h3>
+            <span class="date">Expected May 2027</span>
+          </div>
+          <p>College Station, TX. Coursework: Computer Architecture, Computer Networks, Systems Security, Machine Learning, Multi-Robot Systems.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Methodist University, B.S. Computer Science</h3>
+            <span class="date">May 2022</span>
+          </div>
+          <p>Fayetteville, NC. GPA: 3.63.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Visa, Software Engineer</h3>
+            <span class="date">Jun 2022 – Jun 2025</span>
+          </div>
+          <ul>
+            <li>Integrated Apache Kafka into core transaction-processing services, reducing latency and improving scalability for high-volume transaction messaging.</li>
+            <li>Built a Fraud Map Insight solution combining TensorFlow/Scikit-learn fraud-detection models, NLP-driven news analysis, and real-time interactive visualization.</li>
+            <li>Designed and secured REST API endpoints; automated dependency-vulnerability remediation across CI/CD pipelines, increasing developer productivity by 30%.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Amazon, Software Development Engineer Intern</h3>
+            <span class="date">Jun 2021 – Aug 2021</span>
+          </div>
+          <ul>
+            <li>Built a Dynamic Configuration system enabling service configs to be stored in and deployed from AWS AppConfig without restarts; implemented in Java and validated with end-to-end integration tests.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Methodist University, Math/CS Teaching Assistant &amp; Student Leader</h3>
+            <span class="date">Aug 2020 – May 2022</span>
+          </div>
+          <ul>
+            <li>Tutored students on problem sets and debugging, and supervised CS/Math department TAs, adapting explanations of technical concepts for students at different levels.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Edge-Clinic: LLM Fine-Tuning for Edge Deployment <a class="repo" href="https://github.com/KipkoechTAMU/edge-clinic">GitHub</a></h3>
+            <span class="date">Texas A&amp;M</span>
+          </div>
+          <ul>
+            <li>Fine-tuned T5-small with LoRA (rank=16, alpha=32) using PyTorch, HuggingFace Transformers, and PEFT for clinical NLP on a low-resource Kenyan clinical-vignette dataset.</li>
+            <li>Built a retrieval-augmented generation (RAG) pipeline with FAISS that outperformed baseline and plain-LoRA models on ROUGE; applied INT8 quantization, reducing model size by 72.8%, to prepare the model for deployment on an NVIDIA Jetson Nano.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Multi-Robot Task Allocation <a class="repo" href="https://github.com/KipkoechTAMU/MultiRobotTaskAlloc">GitHub</a></h3>
+            <span class="date">Texas A&amp;M</span>
+          </div>
+          <ul>
+            <li>Implemented the game-theoretic task allocation framework from Park et al. (ICRA 2021) in Python, using Poisson-clock timing and a payoff mechanism so robots choose and switch tasks independently.</li>
+            <li>Built a Webots trash-collection simulation with robot and supervisor controllers covering navigation, manipulation, environment modeling, and data logging.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Security Research: HackerOne Bug Bounty &amp; Independent Vulnerability Research</h3>
+          </div>
+          <ul>
+            <li>Discovered and reported a plaintext session-cookie storage flaw and an unprotected Content Provider vulnerability in the Wikimedia Commons Android app.</li>
+            <li>Fuzzed the libexpat XML parser with AFL++ and AddressSanitizer and documented an API contract violation through manual code audit.</li>
+            <li>Built a ptrace-based debugger to intercept credentials from a live process, and used angr symbolic execution plus AFL++ fuzzing to defeat anti-analysis binaries.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Systems &amp; Computer Architecture</h3>
+          </div>
+          <ul>
+            <li>Implemented a Locality-Aware Cache (LAC) replacement policy in zsim; benchmarked against LRU/LFU across SPEC CPU2006 and PARSEC workloads.</li>
+            <li>Built a parallel traceroute tool in C++ (raw ICMP sockets, async DNS resolution, dynamic RTO estimation) and a flow-controlled, pipelined UDP sender with RTT estimation.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <dl class="skills">
+          <dt>Languages</dt>
+          <dd>C/C++, Python, Java, Go</dd>
+          <dt>AI / ML &amp; GPU</dt>
+          <dd>PyTorch, HuggingFace Transformers, PEFT/LoRA, TensorFlow, Scikit-learn, FAISS (RAG), model quantization, NVIDIA Jetson Nano</dd>
+          <dt>Systems &amp; Networking</dt>
+          <dd>Linux, raw sockets/TCP-IP, multithreading, distributed systems, computer architecture &amp; cache simulation (zsim)</dd>
+          <dt>Cloud, Tools &amp; Security</dt>
+          <dd>AWS (AppConfig, Lambda), Git, CI/CD (Jenkins), SLURM (HPC scheduling), GDB, AFL++, angr</dd>
+        </dl>
+      </section>
+    </main>
+  </body>
+</html>
