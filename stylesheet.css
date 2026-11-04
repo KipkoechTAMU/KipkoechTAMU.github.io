@@ -155,11 +155,20 @@ section {
 h2 {
   margin: 0 0 20px;
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--rule);
   color: var(--heading);
   font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background: var(--accent);
 }
 
 .entry {
@@ -221,6 +230,38 @@ li {
 
 .skills dd {
   margin: 0;
+}
+
+.location {
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.label {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.note {
+  color: var(--muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 2px 0 6px;
+}
+
+.tags span {
+  padding: 1px 10px;
+  border-radius: 999px;
+  background: #eaf1fa;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 700;
 }
 
 .footer {
